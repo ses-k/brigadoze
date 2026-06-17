@@ -21,17 +21,14 @@ export const siteImages = {
     {
       src: "/images/brigadeiro-natal.png",
       alt: "Brigadeiro artesanal 20 g",
-      fit: "cover",
     },
     {
       src: "/images/brigadeiro-box-2.png",
       alt: "Caixa de brigadeiros",
-      fit: "cover",
     },
     {
       src: "/images/cake.png",
       alt: "Encomenda personalizada para ocasiões especiais",
-      fit: "cover",
     },
   ],
 } as const;

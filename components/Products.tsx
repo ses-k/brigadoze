@@ -28,7 +28,7 @@ export function Products() {
                   src={image.src}
                   alt={item.name}
                   fill
-                  className={`${image.fit === "contain" ? "object-contain p-3" : "object-cover"} transition-transform duration-500 group-hover:scale-105`}
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
