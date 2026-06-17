@@ -40,11 +40,6 @@ export const translations = {
           price: "1,00 € / unidade",
         },
         {
-          name: "Brigadeiro 17 g",
-          desc: "Unidade de 17 g, disponível nos sabores da época.",
-          price: "0,80 € / unidade",
-        },
-        {
           name: "Caixa de Brigadeiros",
           desc: "Seleção de sabores para oferecer ou saborear em casa.",
           price: "6,00 €",
@@ -152,11 +147,6 @@ export const translations = {
           name: "Brigadeiro 20 g",
           desc: "20 g unit, available in seasonal flavours.",
           price: "€1.00 / unit",
-        },
-        {
-          name: "Brigadeiro 17 g",
-          desc: "17 g unit, available in seasonal flavours.",
-          price: "€0.80 / unit",
         },
         {
           name: "Brigadeiro Gift Box",

@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
+import { siteImages } from "@/lib/images";
 
 export function Products() {
   const { t } = useLanguage();
@@ -12,14 +14,23 @@ export function Products() {
           {t.products.title}
         </h2>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {t.products.items.map((item) => (
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {t.products.items.map((item, index) => {
+            const image = siteImages.products[index];
+
+            return (
             <article
               key={item.name}
               className="group flex flex-col overflow-hidden rounded-2xl border border-chocolate/10 bg-white shadow-sm transition-shadow hover:shadow-md"
             >
-              <div className="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-caramel/30 to-rose/20">
-                <div className="h-20 w-20 rounded-full bg-chocolate shadow-inner transition-transform group-hover:scale-110" />
+              <div className="relative aspect-[4/3] overflow-hidden bg-cream">
+                <Image
+                  src={image.src}
+                  alt={item.name}
+                  fill
+                  className={`${image.fit === "contain" ? "object-contain p-3" : "object-cover"} transition-transform duration-500 group-hover:scale-105`}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-6">
                 <h3 className="font-serif text-lg font-semibold text-chocolate">
@@ -31,7 +42,8 @@ export function Products() {
                 <p className="mt-4 text-sm font-medium text-gold">{item.price}</p>
               </div>
             </article>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
