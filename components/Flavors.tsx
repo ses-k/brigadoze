@@ -9,7 +9,6 @@ export function Flavors() {
     <section id="flavors" className="bg-chocolate px-6 py-20 text-cream md:py-28">
       <div className="mx-auto max-w-6xl">
         <h2 className="font-serif text-3xl font-semibold md:text-4xl">{t.flavors.title}</h2>
-        <p className="mt-3 max-w-2xl text-cream/60">{t.flavors.subtitle}</p>
 
         <ul className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {t.flavors.list.map((flavor, index) => (

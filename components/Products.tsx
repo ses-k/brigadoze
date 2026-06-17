@@ -11,7 +11,6 @@ export function Products() {
         <h2 className="font-serif text-3xl font-semibold text-chocolate md:text-4xl">
           {t.products.title}
         </h2>
-        <p className="mt-3 max-w-2xl text-chocolate/60">{t.products.subtitle}</p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {t.products.items.map((item) => (

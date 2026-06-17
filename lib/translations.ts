@@ -33,22 +33,21 @@ export const translations = {
     },
     products: {
       title: "Os Nossos Produtos",
-      subtitle: "Descobre as nossas criações — atualiza com os produtos do Instagram",
       items: [
         {
-          name: "Brigadeiro Tradicional",
-          desc: "O clássico de chocolate, cremoso e irresistível.",
-          price: "[Preço a definir]",
+          name: "Brigadeiro 20 g",
+          desc: "Unidade de 20 g, disponível nos sabores da época.",
+          price: "1,00 € / unidade",
+        },
+        {
+          name: "Brigadeiro 17 g",
+          desc: "Unidade de 17 g, disponível nos sabores da época.",
+          price: "0,80 € / unidade",
         },
         {
           name: "Caixa de Brigadeiros",
           desc: "Seleção de sabores para oferecer ou saborear em casa.",
-          price: "[Preço a definir]",
-        },
-        {
-          name: "Edição Especial",
-          desc: "[Nome e descrição do produto em destaque no Instagram]",
-          price: "[Preço a definir]",
+          price: "6,00 €",
         },
         {
           name: "Encomenda Personalizada",
@@ -59,15 +58,13 @@ export const translations = {
     },
     flavors: {
       title: "Sabores",
-      subtitle:
-        "[Lista de sabores disponíveis — atualizar com os sabores publicados no Instagram]",
       list: [
         "Chocolate Tradicional",
         "Côco",
-        "[Sabor a definir]",
-        "[Sabor a definir]",
-        "[Sabor a definir]",
-        "[Sabor a definir]",
+        "Caramelo",
+        "Leite Condensado",
+        "Maracujá",
+        "Manga",
       ],
     },
     order: {
@@ -150,22 +147,21 @@ export const translations = {
     },
     products: {
       title: "Our Products",
-      subtitle: "Discover our creations — update with products from Instagram",
       items: [
         {
-          name: "Traditional Brigadeiro",
-          desc: "The classic chocolate, creamy and irresistible.",
-          price: "[Price TBD]",
+          name: "Brigadeiro 20 g",
+          desc: "20 g unit, available in seasonal flavours.",
+          price: "€1.00 / unit",
+        },
+        {
+          name: "Brigadeiro 17 g",
+          desc: "17 g unit, available in seasonal flavours.",
+          price: "€0.80 / unit",
         },
         {
           name: "Brigadeiro Gift Box",
           desc: "A selection of flavours to gift or enjoy at home.",
-          price: "[Price TBD]",
-        },
-        {
-          name: "Special Edition",
-          desc: "[Featured product name and description from Instagram]",
-          price: "[Price TBD]",
+          price: "€6.00",
         },
         {
           name: "Custom Order",
@@ -176,15 +172,13 @@ export const translations = {
     },
     flavors: {
       title: "Flavours",
-      subtitle:
-        "[List of available flavours — update with flavours posted on Instagram]",
       list: [
         "Traditional Chocolate",
         "Coconut",
-        "[Flavour TBD]",
-        "[Flavour TBD]",
-        "[Flavour TBD]",
-        "[Flavour TBD]",
+        "Caramel",
+        "Condensed Milk",
+        "Passionfruit",
+        "Mango",
       ],
     },
     order: {
