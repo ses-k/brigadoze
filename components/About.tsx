@@ -16,7 +16,6 @@ export function About() {
           <div className="space-y-4 text-chocolate/80 leading-relaxed">
             <p>{t.about.p1}</p>
             <p>{t.about.p2}</p>
-            <p className="text-chocolate/50 italic">{t.about.p3}</p>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3">

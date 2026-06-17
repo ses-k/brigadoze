@@ -20,14 +20,11 @@ export const translations = {
         "Brigadeiros artesanais, feitos à mão com ingredientes selecionados e um toque de doçura portuguesa.",
       ctaInstagram: "Seguir no Instagram",
       ctaOrder: "Fazer Encomenda",
-      placeholder:
-        "[Descrição da marca — atualizar com a bio do Instagram @brigadoze]",
     },
     about: {
       title: "A Nossa História",
       p1: "A Brigadoze nasce da paixão pelo brigadeiro — aquele doce cremoso que conquista à primeira dentada.",
       p2: "Cada brigadeiro é moldado à mão, sem corantes artificiais, com receitas pensadas para surpreender o paladar.",
-      p3: "[História da marca — adicionar texto do Instagram ou da fundadora]",
       values: [
         { title: "Artesanal", desc: "Produção manual, lote a lote" },
         { title: "Qualidade", desc: "Ingredientes selecionados" },
@@ -93,7 +90,7 @@ export const translations = {
           desc: "Os teus brigadeiros chegam frescos e prontos a saborear.",
         },
       ],
-      note: "Encomendas com antecedência mínima de [X dias — a definir].",
+      note: "Encomendas com antecedência mínima de 3 dias.",
     },
     contact: {
       title: "Contacto",
@@ -140,14 +137,11 @@ export const translations = {
         "Handcrafted brigadeiros made with selected ingredients and a touch of Portuguese sweetness.",
       ctaInstagram: "Follow on Instagram",
       ctaOrder: "Place an Order",
-      placeholder:
-        "[Brand description — update with @brigadoze Instagram bio]",
     },
     about: {
       title: "Our Story",
       p1: "Brigadoze was born from a passion for brigadeiros — that creamy sweet that wins you over at first bite.",
       p2: "Each brigadeiro is hand-rolled, free from artificial colourings, with recipes designed to surprise the palate.",
-      p3: "[Brand story — add text from Instagram or the founder]",
       values: [
         { title: "Artisan", desc: "Handmade, batch by batch" },
         { title: "Quality", desc: "Selected ingredients" },
@@ -213,7 +207,7 @@ export const translations = {
           desc: "Your brigadeiros arrive fresh and ready to savour.",
         },
       ],
-      note: "Orders require a minimum of [X days — TBD] advance notice.",
+      note: "Orders require a minimum of 3 days' advance notice.",
     },
     contact: {
       title: "Contact",

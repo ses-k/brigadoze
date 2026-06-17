@@ -27,10 +27,6 @@ export function Hero() {
           {t.hero.subtitle}
         </p>
 
-        <p className="mt-4 max-w-2xl text-sm italic text-chocolate/50">
-          {t.hero.placeholder}
-        </p>
-
         <div className="mt-10 flex flex-wrap gap-4">
           <a
             href="https://www.instagram.com/brigadoze/"
