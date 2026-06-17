@@ -20,6 +20,8 @@ export function Contact() {
             const value = t.contact[field];
             const isPlaceholder = value.startsWith("[");
             const isInstagram = field === "instagram";
+            const isEmail = field === "email";
+            const isPhone = field === "phone";
 
             return (
               <div
@@ -34,6 +36,20 @@ export function Contact() {
                     href={t.contact.instagramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="mt-2 block font-medium text-chocolate transition-colors hover:text-gold"
+                  >
+                    {value}
+                  </a>
+                ) : isEmail ? (
+                  <a
+                    href={`mailto:${value}`}
+                    className="mt-2 block font-medium text-chocolate transition-colors hover:text-gold"
+                  >
+                    {value}
+                  </a>
+                ) : isPhone ? (
+                  <a
+                    href={`tel:${value.replace(/\s/g, "")}`}
                     className="mt-2 block font-medium text-chocolate transition-colors hover:text-gold"
                   >
                     {value}
