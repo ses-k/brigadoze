@@ -17,9 +17,7 @@ export function Flavors() {
               className="flex items-center gap-3 rounded-xl border border-cream/10 bg-cream/5 px-5 py-4 transition-colors hover:bg-cream/10"
             >
               <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-gold" />
-              <span className={flavor.startsWith("[") ? "italic text-cream/50" : ""}>
-                {flavor}
-              </span>
+              <span>{flavor}</span>
             </li>
           ))}
         </ul>

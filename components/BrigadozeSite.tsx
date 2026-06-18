@@ -1,6 +1,7 @@
 "use client";
 
 import { About } from "@/components/About";
+import { Cakes } from "@/components/Cakes";
 import { Contact } from "@/components/Contact";
 import { Flavors } from "@/components/Flavors";
 import { Footer } from "@/components/Footer";
@@ -19,6 +20,7 @@ export function BrigadozeSite() {
         <About />
         <Products />
         <Flavors />
+        <Cakes />
         <Order />
         <Contact />
       </main>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
 import { siteImages } from "@/lib/images";
 
-const navIds = ["about", "products", "flavors", "order", "contact"] as const;
+const navIds = ["about", "products", "flavors", "cakes", "order", "contact"] as const;
 
 export function Header() {
   const { t, toggleLocale } = useLanguage();
