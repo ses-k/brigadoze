@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
 import { siteImages } from "@/lib/images";
@@ -39,12 +40,12 @@ export function Hero() {
             >
               {t.hero.ctaInstagram}
             </a>
-            <a
-              href="#order"
+            <Link
+              href="/encomendar"
               className="inline-flex items-center justify-center rounded-full border-2 border-gold px-8 py-3.5 text-sm font-medium text-gold transition-colors hover:bg-gold hover:text-cream"
             >
               {t.hero.ctaOrder}
-            </a>
+            </Link>
           </div>
         </div>
 

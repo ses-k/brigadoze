@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useLanguage } from "@/lib/LanguageContext";
 import { siteImages } from "@/lib/images";
 
-const navIds = ["about", "products", "flavors", "cakes", "order", "contact"] as const;
+const sectionNavIds = ["about", "products", "flavors", "cakes", "contact"] as const;
 
 export function Header() {
   const { t, toggleLocale } = useLanguage();
@@ -12,7 +13,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-chocolate/10 bg-cream/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
-        <a href="#" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3">
           <Image
             src={siteImages.logo.src}
             alt={siteImages.logo.alt}
@@ -23,18 +24,24 @@ export function Header() {
           <span className="font-serif text-2xl font-semibold tracking-tight text-chocolate">
             Brigadoze
           </span>
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
-          {navIds.map((id) => (
-            <a
+          {sectionNavIds.map((id) => (
+            <Link
               key={id}
-              href={`#${id}`}
+              href={`/#${id}`}
               className="text-sm font-medium text-chocolate/70 transition-colors hover:text-gold"
             >
               {t.nav[id]}
-            </a>
+            </Link>
           ))}
+          <Link
+            href="/encomendar"
+            className="text-sm font-medium text-chocolate/70 transition-colors hover:text-gold"
+          >
+            {t.nav.order}
+          </Link>
         </nav>
 
         <button

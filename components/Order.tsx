@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export function Order() {
@@ -29,6 +30,15 @@ export function Order() {
         <p className="mt-10 rounded-xl border border-gold/30 bg-gold/5 px-6 py-4 text-sm text-chocolate/70">
           {t.order.note}
         </p>
+
+        <div className="mt-8 text-center">
+          <Link
+            href="/encomendar"
+            className="inline-flex items-center justify-center rounded-full bg-chocolate px-8 py-3.5 text-sm font-medium text-cream transition-colors hover:bg-chocolate/90"
+          >
+            {t.order.cta}
+          </Link>
+        </div>
       </div>
     </section>
   );
